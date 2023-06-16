@@ -5,7 +5,7 @@
 /**
  * main - Entry point
  *
- * printing random numbers
+ * Description: false or true validation
  *
  * Return: Always 0 (Success)
  */
@@ -18,9 +18,9 @@ int main(void)
         n = rand() - RAND_MAX / 2;
         if (n > 0)
 		printf("%i is positive\n", n);
-        else if (n < 0)
-		printf("%i is negative\n", n);
-        else
+        else if (n == 0)
 		printf("%i is zero\n", n);
+        else
+		printf("%i is negative\n", n);
         return (0);
 }
