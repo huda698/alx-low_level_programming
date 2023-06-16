@@ -2,14 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point
  *
  * Description: print the last digit of random numder.
  *
  * Return: Always 0 (success)
  *
- **/
+ */
 int main(void)
 {
 	int n, digit;
