@@ -12,10 +12,13 @@ int main(void)
 {
 	char l = 'a', U = 'A';
 
-	while (l <= 'z' && U <= 'Z')
+	while (l <= 'z')
 	{
 		putchar(l);
 		l++;
+	}
+	while (U <= 'Z')
+	{
 		putchar(U);
 		U++;
 	}
