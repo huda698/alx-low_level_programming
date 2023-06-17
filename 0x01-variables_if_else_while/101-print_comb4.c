@@ -20,7 +20,7 @@ int main(void)
 			num2 = 2;
 			while (num2 < 10)
 			{
-				if (num1 != num2 && num1 < num2)
+				if (num != num1 && num < num1 && num1 != num2 && num1 < num2)
 				{
 					putchar(num + '0');
 					putchar(num1 + '0');
