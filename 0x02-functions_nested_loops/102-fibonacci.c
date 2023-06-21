@@ -11,7 +11,8 @@
 
 int main(void)
 {
-	int fib1 = 0, fib2 = 1, sum, i;
+	int i;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
 	for (i = 1; i <= 50; i++)
 	{
