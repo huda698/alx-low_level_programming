@@ -16,7 +16,7 @@ int main(void)
 	for (i = 1; i <= 50; i++)
 	{
 		sum = fib1 + fib2;
-		printf("%d\n", sum);
+		printf("%d", sum);
 
 		fib1 = fib2;
 		fib2 = sum;
