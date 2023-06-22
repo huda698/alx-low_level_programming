@@ -19,7 +19,7 @@ int main(void)
 		sum = fib1 + fib2;
 		if (sum > 4000000)
 			break;
-		if ( sum % 2 == 0)
+		if (sum % 2 == 0)
 			net += sum;
 		fib1 = fib2;
 		fib2 = sum;
