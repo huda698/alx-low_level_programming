@@ -1,22 +1,6 @@
 #include "main.h"
 
 /**
- * _puts - prints a string.
- * @str: string.
- */
-
-void _puts(char *str)
-{
-	int i = 0;
-
-	while (str[i])
-	{
-		_putchar(str[i]);
-		i++;
-	}
-}
-
-/**
  * _atoi - convert a string to an integer.
  * @s: string parameter.
  * Return: converted integer.
@@ -69,7 +53,7 @@ int main(int argc, char const *argv[])
 
 	if (argc != 3)
 	{
-		_puts("Error ");
+		printf("Error\n ");
 		exit(98);
 	}
 	print_int(_atoi(argv[1]) * _atoi(argv[2]));
