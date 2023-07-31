@@ -1,6 +1,6 @@
 #include "main.h"
 
-/** 
+/**
  * main - print the number of arguments.
  * @argc: array size.
  * @argv: array to string.
