@@ -1,4 +1,5 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - adds positive numbers.
@@ -7,19 +8,17 @@
  * Return: 0.
  */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
-	int sum = 0, i;
+	int sum = 0;
+	char *c;
 
-	for (i = 0; i < argc; i++)
+	while (--argc)
 	{
-		if (argc && argc > 0)
-			sum += atoi(argv[i]);
-		if (argc < '0' || argc > '9')
-		{
-			printf("Error\n");
-			return (1);
-		}
+		for (c = argv[argc]; *c; c++)
+			if (*c < '0' || *c > '9')
+				return (printf("Error\n"), 1);
+		sum += atoi(argv[argc]);
 	}
 	printf("%d\n", sum);
 	return (0);
