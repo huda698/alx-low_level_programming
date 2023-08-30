@@ -1,6 +1,0 @@
-#!/bin/bash
-echo "input massege"
-read v
-git add .
-git commit -m "${v}"
-git push
