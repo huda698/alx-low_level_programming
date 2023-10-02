@@ -19,7 +19,7 @@ int main(int ac, char **av)
 	if (f == -1)
 		dprintf(STDERR_FILENO, "Can't open file: %s\n", av[1]), exit(98);
 	i = read(f, &h, sizeof(h));
-	if (i < 1 || b != sizeof(h))
+	if (i < 1 || i != sizeof(h))
 		dprintf(STDERR_FILENO, "Can't read from file: %s\n", av[1]), exit(98);
 	if (h.e_ident[0] == 0x7f && h.e_ident[1] == 'E' && h.e_ident[2] == 'L' &&
 			h.e_ident[3] == 'F')
@@ -263,7 +263,7 @@ void print_entry(Elf64_Ehdr h)
 	else
 	{
 		i = 0;
-		l = h.e_ident[EI_CLASS] == ELFCLASS ? 7 : 3;
+		l = h.e_ident[EI_CLASS] == ELFCLASS32 ? 7 : 3;
 		while (!e[i])
 			i++;
 		printf("%x", e[i++]);
