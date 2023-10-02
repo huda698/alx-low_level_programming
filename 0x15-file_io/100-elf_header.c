@@ -116,7 +116,6 @@ void print_version(Elf64_Ehdr h)
 		case EV_NONE:
 			printf("%s", "");
 			break;
-			break;
 	}
 	printf("\n");
 }
@@ -187,7 +186,7 @@ void print_osabi_more(Elf64_Ehdr h)
 			printf("ARM");
 			break;
 		default:
-			printf("<unknown:%x>", h.e_ident[EI_OSABI]);
+			printf("<unknown>:%x", h.e_ident[EI_OSABI]);
 			break;
 	}
 }
